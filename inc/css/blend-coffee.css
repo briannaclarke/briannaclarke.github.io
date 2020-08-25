@@ -754,7 +754,7 @@ footer {
   max-height: 20em;
   width: 100%;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
