@@ -968,6 +968,8 @@ iframe.music-player{
     width: auto;
   }
   .custom-header-media {
+    left: auto;
+    right: auto;
     height: 100%;
     width: 100%;
     /* background-size: cover; */
@@ -987,9 +989,11 @@ iframe.music-player{
   }
 
   .custom-header-media img {
+    margin: auto;
+    left: auto;
+    right: auto;
     height: 768px;
     width: 768px;
-    margin: auto;
   }
   img.menu-album {
     width: 2.5em;
@@ -1002,11 +1006,6 @@ iframe.music-player{
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
-
-  .custom-header-media {
-    left: auto;
-    right: auto;
-  }
 
 }
 
