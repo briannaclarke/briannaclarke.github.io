@@ -976,8 +976,8 @@ iframe.music-player{
   }
 
   .custom-header,
-  .custom-header-media  {
-    height: 100vh;
+  .custom-header-media {
+    height: 100vw;
     max-height: 100vh;
     width: auto;
     max-width: 100vw;
