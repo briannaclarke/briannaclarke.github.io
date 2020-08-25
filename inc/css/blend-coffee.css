@@ -753,6 +753,7 @@ footer {
   height: 100vw;
   max-width: 100%;
   max-height: 320px;
+  width: auto;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -871,7 +872,7 @@ iframe.music-player{
 19.0 Media Queries
 --------------------------------------------------------------*/
 
-@media only screen and (min-width: 321px) {
+@media screen and (min-width: 321px) {
 
   h1 {
     font-size: calc( 64px + ( 96 * ( ( 100vw - 321px ) / 448 ) ) );
@@ -914,7 +915,7 @@ iframe.music-player{
 
 }
 
-@media only screen and (min-width: 561px) {
+@media screen and (min-width: 561px) {
 
   nav ul ul {
     line-height: 1em;
@@ -942,7 +943,7 @@ iframe.music-player{
 
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   h1 {
     font-size: 10rem;
@@ -983,8 +984,8 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 
   .custom-header-media {
-    height: 768px;
-    width: 768px;
+    /* height: 768px;
+    width: 768px; */
   }
 
 }
@@ -997,8 +998,8 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (orientation : portrait) {
 
   .custom-header-media {
-    height: 768px;
-    width: 768px;
+    /* height: 768px;
+    width: 768px; */
   }
 
 }
@@ -1011,8 +1012,8 @@ and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
 
   .custom-header-media {
-    height: 375px;
-    width: 375px;
+    /* height: 375px;
+    width: 375px; */
   }
 
 }
