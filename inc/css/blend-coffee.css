@@ -721,7 +721,7 @@ footer {
 .wrap {
   margin-left: auto;
   margin-right: auto;
-  min-width: 320px;
+  min-width: 15em;
   height: 100%;
   width: auto;
 }
@@ -736,37 +736,37 @@ footer {
 --------------------------------------------------------------*/
 
 .custom-header {
-  height: 100vh;
-  max-height: 20em;
+  height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
   position: relative;
   z-index: 1;
 }
 .custom-header-media {
+  /* background-size: cover; */
+  /* background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; */
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
   top: 0;
   bottom: auto;
   left: 0;
   right: 0;
   height: 100%;
-  max-height: 20em;
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
   position: absolute;
 }
 .custom-header-media img {
-  top: auto;
-  left: auto;
+  height: 100vw;
+  max-height: 100vh;
   margin: 0 auto;
-  height: 100%;
-  width: 100%;
   position: fixed;
 }
-
-/* @supports ( object-fit: cover ) {
-  .custom-header-media img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-} */
 
 /* Hides div in Customizer preview when header images or videos change. */
 body:not(.has-header-image) .custom-header-media {
@@ -786,7 +786,7 @@ body:not(.has-header-image) .custom-header-media {
 }
 
 .album-cover-page.settle-down .custom-header-media {
-  background-image: url('../img/67801905_131902448088938_5247198526901076929_n.jpg');
+  background-image: url('../img/67801905_131902576088938_5247198526901076929_n.jpg');
 }
 
 .album-cover-page.do-you-smoke .custom-header-media {
@@ -865,25 +865,25 @@ iframe.music-player{
 19.0 Media Queries
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 321px) {
+@media only screen and (min-width: 193px) {
 
   h1 {
-    font-size: calc( 64px + ( 96 * ( ( 100vw - 321px ) / 448 ) ) );
+    font-size: calc( 64px + ( 96 * ( ( 100vw - 193px ) / 576 ) ) );
   }
   h2, h3 {
-    font-size: calc( 30px + ( 60 * ( ( 100vw - 321px ) / 448 ) ) );
+    font-size: calc( 30px + ( 60 * ( ( 100vw - 193px ) / 576 ) ) );
   }
   h4, h5 {
-    font-size: calc( 30px + ( 30 * ( ( 100vw - 321px ) / 448 ) ) );
+    font-size: calc( 30px + ( 30 * ( ( 100vw - 193px ) / 576 ) ) );
   }
   nav > ul {
-    font-size: calc( 16px + ( 14 * ( ( 100vw - 321px ) / 448 ) ) );
+    font-size: calc( 16px + ( 14 * ( ( 100vw - 193px ) / 576 ) ) );
   }
   h6, p,
   .music ul,
   .lyric ul,
   .entry ul {
-    font-size: calc( 12px + ( 6 * ( ( 100vw - 321px ) / 448 ) ) );
+    font-size: calc( 12px + ( 6 * ( ( 100vw - 193px ) / 576 ) ) );
   }
 
   .wrap {
@@ -891,29 +891,26 @@ iframe.music-player{
   }
 
   iframe {
-    height: calc( 148px + ( 257 * ( ( 100vw - 321px ) / 448 ) ) );
+    height: calc( 108px + ( 297 * ( ( 100vw - 193px ) / 576 ) ) );
     max-height: 405px;
   }
 
-  .custom-header,
-  .custom-header-media,
   .custom-header-media img {
+    height: calc( 192px + ( 576 * ( ( 100vw - 193px ) / 576 ) ) );
     max-height: 768px;
-    max-width: 768px;
-  }
-  .custom-header,
-  .custom-header-media,
-  .custom-header-media img {
-    height: calc( 320px + ( 448 * ( ( 100vw - 321px ) / 448 ) ) );
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 
   img.menu-album {
-    width: calc( 20px + ( 20 * ( ( 100vw - 321px ) / 448 ) ) );
+    width: calc( 20px + ( 20 * ( ( 100vw - 193px ) / 576 ) ) );
   }
 
 }
 
-@media screen and (min-width: 561px) {
+@media only screen and (min-width: 561px) {
 
   nav ul ul {
     line-height: 1em;
@@ -941,7 +938,7 @@ iframe.music-player{
 
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
   h1 {
     font-size: 10rem;
@@ -963,38 +960,17 @@ iframe.music-player{
     font-size: 1.125em;
   }
 
-  .custom-header {
-    height: 100vw;
-    width: auto;
-  }
-  .custom-header-media {
-    left: auto;
-    right: auto;
-    height: 100%;
-    width: 100%;
-    /* background-size: cover; */
-    /* background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed; */
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-  .custom-header,
-  .custom-header-media {
-    max-height: 100vh;
-    max-width: 100vw;
+  .custom-header-media img {
+    height: 768px;
   }
 
-  .custom-header-media img {
-    margin: auto;
-    left: auto;
-    right: auto;
-    height: 768px;
-    width: 768px;
+  @supports ( object-fit: cover ) {
+    .custom-header-media img {
+      /* -o-object-fit: contain;
+         object-fit: contain; */
+    }
   }
+
   img.menu-album {
     width: 2.5em;
   }
