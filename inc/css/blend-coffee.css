@@ -757,14 +757,12 @@ footer {
   position: absolute;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .custom-header-media img {
   left: auto;
-  right: auto;
   margin: 0 auto;
   height: 100vw;
   max-height: 20em;
@@ -1000,8 +998,8 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 
   .custom-header-media {
-    /* height: 768px;
-    width: 768px; */
+    left: auto;
+    right: auto;
   }
 
 }
