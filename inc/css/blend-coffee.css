@@ -755,6 +755,7 @@ footer {
   width: 100%;
   overflow: hidden;
   position: absolute;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
