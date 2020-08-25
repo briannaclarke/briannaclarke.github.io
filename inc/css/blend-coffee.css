@@ -757,6 +757,8 @@ footer {
   position: absolute;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -906,19 +908,17 @@ iframe.music-player{
   }
 
   .custom-header,
-  .custom-header-media {
-    height: 100vh;
+  .custom-header-media,
+  .custom-header-media img {
     max-height: 768px;
+    max-width: 768px;
   }
   .custom-header,
   .custom-header-media,
   .custom-header-media img {
-    max-height: 768px;
-  }
-  .custom-header-media img {
     height: calc( 320px + ( 448 * ( ( 100vw - 321px ) / 448 ) ) );
-    max-width: 768px;
   }
+
   img.menu-album {
     width: calc( 20px + ( 20 * ( ( 100vw - 321px ) / 448 ) ) );
   }
@@ -975,14 +975,12 @@ iframe.music-player{
     font-size: 1.125em;
   }
 
-  .custom-header {
+  .custom-header,
+  .custom-header-media  {
     height: 100vh;
     max-height: 100vh;
     width: auto;
-  }
-  .custom-header-media {
-    height: 100vh;
-    max-height: 100vh;
+    max-width: 100vw;
   }
   .custom-header-media img {
     height: 768px;
