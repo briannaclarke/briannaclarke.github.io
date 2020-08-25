@@ -736,16 +736,12 @@ footer {
 --------------------------------------------------------------*/
 
 .custom-header {
-  height: calc( 100vh - 24px );
+  height: 100vh;
   max-height: 20em;
   position: relative;
   z-index: 1;
 }
 .custom-header-media {
-  /* background-size: cover; */
-  /* background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed; */
   top: 0;
   bottom: auto;
   left: 0;
@@ -755,19 +751,13 @@ footer {
   width: 100%;
   overflow: hidden;
   position: absolute;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
 }
 .custom-header-media img {
+  top: auto;
   left: auto;
   margin: 0 auto;
-  height: 100vw;
-  max-height: 20em;
-  width: 100vw;
-  max-width: 320px;
+  height: 100%;
+  width: 100%;
   position: fixed;
 }
 
@@ -973,13 +963,29 @@ iframe.music-player{
     font-size: 1.125em;
   }
 
+  .custom-header {
+    height: 100vw;
+    width: auto;
+  }
+  .custom-header-media {
+    height: 100%;
+    width: 100%;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; */
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
   .custom-header,
   .custom-header-media {
-    height: 100vw;
     max-height: 100vh;
-    width: auto;
     max-width: 100vw;
   }
+
   .custom-header-media img {
     height: 768px;
     width: 768px;
