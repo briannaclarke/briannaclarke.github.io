@@ -773,12 +773,12 @@ footer {
   position: fixed;
 }
 
-@supports ( object-fit: cover ) {
+/* @supports ( object-fit: cover ) {
   .custom-header-media img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-}
+} */
 
 /* Hides div in Customizer preview when header images or videos change. */
 body:not(.has-header-image) .custom-header-media {
@@ -953,7 +953,7 @@ iframe.music-player{
 
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 768px) {
 
   h1 {
     font-size: 10rem;
