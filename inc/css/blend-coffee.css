@@ -769,8 +769,8 @@ footer {
 
 @supports ( object-fit: cover ) {
   .has-header-image .custom-header-media img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    /* -o-object-fit: cover;
+       object-fit: cover; */
   }
 }
 
