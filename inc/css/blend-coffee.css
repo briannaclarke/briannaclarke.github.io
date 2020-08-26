@@ -963,6 +963,13 @@ iframe.music-player{
     height: 768px;
   }
 
+  /* @supports ( object-fit: cover ) {
+    .custom-header-media img {
+      -o-object-fit: contain;
+         object-fit: contain;
+    }
+  } */
+
   img.menu-album {
     width: 2.5em;
   }
@@ -975,9 +982,16 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
 
+  .custom-header {
+    height: 768px;
+  }
+  .custom-header-media {
+    left: auto;
+    right: auto;
+    /* position: absolute; */
+  }
   .custom-header-media img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    height: 768px;
   }
 
 }
