@@ -364,7 +364,7 @@ h3 {
 h4,
 h5 {
   /* line-height: 1.125em; */
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 h4 {
   /* padding: 0.625em 0 0.25em; */
@@ -840,9 +840,11 @@ img.menu-album {
   display: inline-block;
   margin: 0.309em 0 auto 0.5em;
 }
-.site-navigation-fixed li.menu-item-scroll-down {
+.site-navigation-fixed li.menu-item-scroll-down,
+.site-navigation-fixed .custom-header-media {
   display: none;
 }
+
 
 /* Make sure embeds and iframes fit their containers. */
 
@@ -873,7 +875,7 @@ iframe.music-player{
     font-size: calc( 30px + ( 60 * ( ( 100vw - 193px ) / 576 ) ) );
   }
   h4, h5 {
-    font-size: calc( 30px + ( 30 * ( ( 100vw - 193px ) / 576 ) ) );
+    font-size: calc( 24px + ( 36 * ( ( 100vw - 193px ) / 576 ) ) );
   }
   nav > ul {
     font-size: calc( 16px + ( 14 * ( ( 100vw - 193px ) / 576 ) ) );
@@ -897,10 +899,10 @@ iframe.music-player{
   .custom-header-media img {
     height: calc( 192px + ( 576 * ( ( 100vw - 193px ) / 576 ) ) );
     max-height: 768px;
-    -webkit-transform: none;
+    /* -webkit-transform: none;
        -moz-transform: none;
         -ms-transform: none;
-            transform: none;
+            transform: none; */
   }
 
   img.menu-album {
