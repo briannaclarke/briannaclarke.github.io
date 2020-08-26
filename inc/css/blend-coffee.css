@@ -1002,13 +1002,11 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
 
-  .custom-header-media {
-    left: auto;
-    right: auto;
-    /* position: absolute; */
-  }
   .custom-header {
     height: 1024px;
+  }
+  .custom-header-media {
+    position: absolute;
   }
   .custom-header-media img {
     height: 768px;
