@@ -1006,8 +1006,9 @@ and (orientation : landscape) {
     height: 1024px;
   }
   .custom-header-media {
-    left: 8em;
-    right: 8em;
+    left: auto;
+    right: auto;
+    margin: 0 8em;
     /* position: absolute; */
   }
   .custom-header-media img {
