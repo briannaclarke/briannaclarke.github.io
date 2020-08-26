@@ -461,7 +461,11 @@ footer {
  }
  body,
  nav ul ul,
- .navigation-top {
+ .navigation-top,
+ header,
+ main,
+ footer,
+ .site-footer {
    background-color: #f8f8fa;
  }
  nav li li,
@@ -475,15 +479,10 @@ footer {
    background-color: #111;
    color: #f8f8fa;
  }
- header,
- main,
- footer {
-   background-color: inherit;
- }
 
  /* Bleach */
  .bleach a,
- .bleach .site-footer a:hover,
+ .bleach footer a:hover,
  .bleach h3,
  .bleach h6,
  .bleach .color,
@@ -498,7 +497,7 @@ footer {
 
  /* I Don't Like Me Much Right Now */
  .right-now a,
- .right-now .site-footer a:hover,
+ .right-now footer a:hover,
  .right-now .menu-scroll-down,
  .right-now h3,
  .right-now h6,
@@ -509,7 +508,7 @@ footer {
 
  /* Sour Keys */
  .sour-keys a,
- .sour-keys .site-footer a:hover,
+ .sour-keys footer a:hover,
  .sour-keys h3,
  .sour-keys h6,
  .sour-keys .color,
@@ -524,7 +523,7 @@ footer {
 
  /* Settle Down */
  .settle-down a,
- .settle-down .site-footer a:hover,
+ .settle-down footer a:hover,
  .settle-down .menu-scroll-down,
  .settle-down h3,
  .settle-down h6,
@@ -535,7 +534,7 @@ footer {
 
  /* Do You Smoke */
  .do-you-smoke a,
- .do-you-smoke .site-footer a:hover,
+ .do-you-smoke footer a:hover,
  .do-you-smoke .menu-scroll-down,
  .do-you-smoke h3,
  .do-you-smoke h6,
@@ -868,7 +867,7 @@ iframe.music-player{
 @media only screen and (min-width: 193px) {
 
   h1 {
-    font-size: calc( 64px + ( 96 * ( ( 100vw - 193px ) / 576 ) ) );
+    font-size: calc( 48px + ( 112 * ( ( 100vw - 193px ) / 576 ) ) );
   }
   h2, h3 {
     font-size: calc( 30px + ( 60 * ( ( 100vw - 193px ) / 576 ) ) );
