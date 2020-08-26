@@ -254,13 +254,14 @@
 
         if ( header_pos < '0.1' ) {
           $('.navigation-top').addClass('site-navigation-fixed');
+          $('.custom-header').addClass('site-navigation-fixed');
         }
         else {
           $('.navigation-top').removeClass('site-navigation-fixed');
+          $('.custom-header').removeClass('site-navigation-fixed');
         }
 
       });
-
     });
 
     $( window ).on( 'load', function() {

@@ -251,29 +251,25 @@
   <script>
     $( document ).ready(function() {
 
-      var header = $('.custom-header-media'),
-      range = 500;
+      var header_media = $('.custom-header-media'),
+          header_range = 500;
 
       $( window ).on( 'scroll', function() {
 
-        var nav_page = $( this ).scrollTop(),
-        height = header.outerHeight(),
-          offset = height / 1,
-          calc = 1 - (nav_page - offset + range) / range;
+        var header_scroll = $( this ).scrollTop(),
+            header_offset = header_media.outerHeight(),
+            header_pos = 1 - ( ( header_scroll - header_offset + header_range ) / header_range );
 
-        header.css({ 'opacity': calc });
-
-        if (calc > '1') {
-          header.css({ 'opacity': 1 });
-        } else if ( calc < '0.1' ) {
+        if ( header_pos < '0.1' ) {
           $('.navigation-top').addClass('site-navigation-fixed');
-        } else if ( calc < '0' ) {
-          header.css({ 'opacity': 0 });
-        } else {
-          $('.navigation-top').removeClass('site-navigation-fixed'); }
+          $('.custom-header').addClass('site-navigation-fixed');
+        }
+        else {
+          $('.navigation-top').removeClass('site-navigation-fixed');
+          $('.custom-header').removeClass('site-navigation-fixed');
+        }
 
       });
-
     });
 
     $( window ).on( 'load', function() {
