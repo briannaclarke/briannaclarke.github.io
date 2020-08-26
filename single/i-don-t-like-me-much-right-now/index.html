@@ -249,14 +249,14 @@
           offset = height / 1,
           calc = 1 - (nav_page - offset + range) / range;
 
-        // header.css({ 'opacity': calc });
+        header.css({ 'opacity': calc });
 
         if (calc > '1') {
-          // header.css({ 'opacity': 1 });
-        } else if ( calc < '0.09' ) {
+          header.css({ 'opacity': 1 });
+        } else if ( calc < '0.1' ) {
           $('.navigation-top').addClass('site-navigation-fixed');
         } else if ( calc < '0' ) {
-          // header.css({ 'opacity': 0 });
+          header.css({ 'opacity': 0 });
         } else {
           $('.navigation-top').removeClass('site-navigation-fixed'); }
 
