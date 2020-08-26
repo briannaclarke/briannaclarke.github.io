@@ -963,13 +963,6 @@ iframe.music-player{
     height: 768px;
   }
 
-  @supports ( object-fit: cover ) {
-    .custom-header-media img {
-      /* -o-object-fit: contain;
-         object-fit: contain; */
-    }
-  }
-
   img.menu-album {
     width: 2.5em;
   }
@@ -981,6 +974,13 @@ iframe.music-player{
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
+
+  @supports ( object-fit: cover ) {
+    .custom-header-media img {
+      -o-object-fit: contain;
+         object-fit: contain;
+    }
+  }
 
 }
 
