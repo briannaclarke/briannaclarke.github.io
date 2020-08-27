@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentyseventeen
- Version:      1.0.0
+ Version:      0.1.2
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
@@ -445,9 +445,10 @@ footer {
   cursor: default;
 }
 
-/*--------------------------------------------------------------
-6.0 Forms
---------------------------------------------------------------*/
+/* body:not(.has-header-image) a:hover, */
+footer a:hover {
+  text-decoration: overline;
+}
 
 /*--------------------------------------------------------------
 7.0 Formatting
@@ -557,15 +558,6 @@ footer {
    color: #f8f8fa;
  }
 
- /* body:not(.has-header-image) a:hover, */
- footer a:hover {
-   text-decoration: overline;
- }
- /* .site-footer a:hover {
-   text-decoration: none;
- } */
-
-
  iframe.music-player {
    background-color: transparent;
    overflow: hidden;
@@ -599,10 +591,6 @@ footer {
  nav ul li.menu-item-has-children:hover:after {
    border: none;
  }
-
-/*--------------------------------------------------------------
-8.0 Lists
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 12.0 Navigation
@@ -793,21 +781,8 @@ body:not(.has-header-image) .custom-header-media {
 } */
 
 /*--------------------------------------------------------------
-13.4 Posts
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-13.5 Pages
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-13.6 Footer
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
 16.0 Media
 --------------------------------------------------------------*/
-
 
 img {
   height: auto;
