@@ -496,6 +496,17 @@ footer a:hover {
    color: #c9515c;
  }
 
+ /* Pennies */
+ .pennies a,
+ .pennies footer a:hover,
+ .pennies .menu-scroll-down,
+ .pennies h3,
+ .pennies h6,
+ .pennies .color,
+ .pennies .lyric .chorus li {
+   color: #ff7700;
+ }
+
  /* I Don't Like Me Much Right Now */
  .right-now a,
  .right-now footer a:hover,
