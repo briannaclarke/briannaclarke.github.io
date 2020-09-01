@@ -555,6 +555,7 @@ footer a:hover {
    color: #b1b1b1;
  }
 
+ body:not(.has-header-image) h6,
  body:not(.has-header-image) main a,
  body:not(.has-header-image) footer a {
    color: #666;
