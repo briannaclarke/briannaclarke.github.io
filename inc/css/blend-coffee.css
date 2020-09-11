@@ -326,9 +326,20 @@ body {
 
 button, input, select, textarea { font-family: 'Open Sans', sans-serif; }
 
-h1, h2, h3, h4 { font-family: 'QuicheDisplay-Black', serif; /* font-family: 'Abril Fatface', serif; *//* letter-spacing: 0.025em; */ }
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'QuicheDisplay-Black', serif;
+  font-variant-alternates: stylistic(salt);
+  /* font-family: 'Abril Fatface', serif; */
+  /* letter-spacing: 0.025em; */
+}
 
-nav a { font-family: 'QuicheDisplay-Black', serif; }
+nav a {
+  font-family: 'QuicheDisplay-Black', serif;
+  font-variant-alternates: stylistic(salt);
+}
 
 pre, code, kbd, samp { font-family: monospace, monospace; }
 
