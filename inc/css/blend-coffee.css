@@ -5,10 +5,19 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentyseventeen
- Version:      0.1.2
+ Version:      0.1.3
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;1,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+/* @import url('//hello.myfonts.net/count/3c388a'); */
+
+@font-face {
+  font-family: 'QuicheDisplay-Black';
+  src:url('https://lifeasplay.ca/dane/.brianna/inc/fonts/_11688732/_display-black.woff2') format('woff2'),
+      url('https://lifeasplay.ca/dane/.brianna/inc/fonts/_11688732/_display-black.woff') format('woff');
+}
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -317,9 +326,9 @@ body {
 
 button, input, select, textarea { font-family: 'Open Sans', sans-serif; }
 
-h1, h2, h3, h4 { font-family: 'Abril Fatface', serif; /* letter-spacing: 0.025em; */ }
+h1, h2, h3, h4 { font-family: 'QuicheDisplay-Black', serif; /* font-family: 'Abril Fatface', serif; *//* letter-spacing: 0.025em; */ }
 
-nav a { font-family: 'Abril Fatface', serif; }
+nav a { font-family: 'QuicheDisplay-Black', serif; }
 
 pre, code, kbd, samp { font-family: monospace, monospace; }
 
