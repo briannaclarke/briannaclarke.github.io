@@ -342,12 +342,13 @@ h4 {
   /* letter-spacing: 0.025em; */
 }
 
-nav a {
+nav > ul > li > a {
   font-family: 'QuicheDisplay-Black', serif;
   font-variant-alternates: stylistic(salt);
-  letter-spacing: 0.05em;
+  letter-spacing: calc( 1em / 30 );
 }
 nav ul ul a {
+  /* letter-spacing: 0.25em; */
 }
 
 pre, code, kbd, samp { font-family: monospace, monospace; }
