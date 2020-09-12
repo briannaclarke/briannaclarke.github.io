@@ -15,15 +15,15 @@
 
 @font-face {
   font-family: 'QuicheDisplay-Black';
-  src:url('https://lifeasplay.ca/dane/.brianna/inc/fonts/_11688732/_display-black.woff2') format('woff2'),
-      url('https://lifeasplay.ca/dane/.brianna/inc/fonts/_11688732/_display-black.woff') format('woff');
+  src:url('https://lifeasplay.ca/dane/.brianna/inc/fonts/_11688732/_display-black.min.woff2') format('woff2'),
+      url('https://lifeasplay.ca/dane/.brianna/inc/fonts/_11688732/_display-black.min.woff') format('woff');
 }
 
-@font-feature-values QuicheDisplay-Black {
+/* @font-feature-values QuicheDisplay-Black {
   @stylistic {
     salt: 1;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -337,14 +337,14 @@ h2,
 h3,
 h4 {
   font-family: 'QuicheDisplay-Black', serif;
-  font-variant-alternates: stylistic(salt);
+  /* font-variant-alternates: stylistic(salt); */
   /* font-family: 'Abril Fatface', serif; */
   /* letter-spacing: 0.025em; */
 }
 
 nav > ul > li > a {
   font-family: 'QuicheDisplay-Black', serif;
-  font-variant-alternates: stylistic(salt);
+  /* font-variant-alternates: stylistic(salt); */
   letter-spacing: calc( 1em / 30 );
 }
 nav ul ul a {
