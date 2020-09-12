@@ -942,8 +942,7 @@ and (device-width : 375px)
 and (-webkit-device-pixel-ratio : 2)
 and (orientation : portrait) {
 
-  nav .menu-item-has-children > a > .icon,
-  nav ul li.menu-item-current-page {
+  nav .menu-item-has-children > a > .icon {
     display: inline-block;
   }
   .js nav ul ul,
@@ -962,8 +961,7 @@ and (device-width : 414px)
 and (-webkit-device-pixel-ratio : 2)
 and (orientation : portrait) {
 
-  nav .menu-item-has-children > a > .icon,
-  nav ul li.menu-item-current-page {
+  nav .menu-item-has-children > a > .icon {
     display: inline-block;
   }
   .js nav ul ul,
@@ -982,8 +980,7 @@ and (device-width : 480px)
 and (-webkit-device-pixel-ratio : 2)
 and (orientation : landscape) {
 
-  nav .menu-item-has-children > a > .icon,
-  nav ul li.menu-item-current-page {
+  nav .menu-item-has-children > a > .icon {
     display: inline-block;
   }
   .js nav ul ul,
