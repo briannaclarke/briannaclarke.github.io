@@ -928,6 +928,74 @@ iframe.music-player{
 
 }
 
+/* IPHONE 5, 5S */
+@media only screen
+and (device-width : 320px)
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : portrait) {
+
+}
+
+/* IPHONE 6, 7, 8 */
+@media only screen
+and (device-width : 375px)
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : portrait) {
+
+  nav .menu-item-has-children > a > .icon,
+  nav ul li.menu-item-current-page {
+    display: inline-block;
+  }
+  .js nav ul ul,
+  nav ul li.menu-item-has-children.focus:before,
+  nav ul li.menu-item-has-children:hover:before,
+  nav ul li.menu-item-has-children.focus:after,
+  nav ul li.menu-item-has-children:hover:after {
+    display: block;
+  }
+
+}
+
+/* IPHONE 6+, 7+, 8+ */
+@media only screen
+and (device-width : 414px)
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : portrait) {
+
+  nav .menu-item-has-children > a > .icon,
+  nav ul li.menu-item-current-page {
+    display: inline-block;
+  }
+  .js nav ul ul,
+  nav ul li.menu-item-has-children.focus:before,
+  nav ul li.menu-item-has-children:hover:before,
+  nav ul li.menu-item-has-children.focus:after,
+  nav ul li.menu-item-has-children:hover:after {
+    display: block;
+  }
+
+}
+
+/* IPHONE 4S */
+@media only screen
+and (device-width : 480px)
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : landscape) {
+
+  nav .menu-item-has-children > a > .icon,
+  nav ul li.menu-item-current-page {
+    display: inline-block;
+  }
+  .js nav ul ul,
+  nav ul li.menu-item-has-children.focus:before,
+  nav ul li.menu-item-has-children:hover:before,
+  nav ul li.menu-item-has-children.focus:after,
+  nav ul li.menu-item-has-children:hover:after {
+    display: block;
+  }
+
+}
+
 @media only screen and (min-width: 561px) {
 
   nav ul ul {
@@ -1044,48 +1112,6 @@ and (orientation : portrait) {
     /* height: 768px;
     width: 768px; */
   }
-
-}
-
-/* IPHONE X */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
-
-  .custom-header-media {
-    /* height: 375px;
-    width: 375px; */
-  }
-
-}
-
-/* IPHONE 6+, 7+, 8+ */
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px) {
-
-}
-
-/* IPHONE 6, 7, 8 */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-
-}
-
-/* IPHONE 5, 5S */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-
-}
-
-/* IPHONE 4S */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
 
 }
 
